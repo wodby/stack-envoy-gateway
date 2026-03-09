@@ -1,0 +1,8 @@
+name: envoy-gateway
+title: Envoy Gateway
+icon: envoy
+services:
+- name: envoy-gateway
+  title: Envoy Gateway
+  service: envoy-gateway
+  required: true
