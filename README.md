@@ -6,6 +6,11 @@ Wodby clusters configured to use Envoy Gateway.
 This repository defines the Wodby stack manifests and default service
 composition for Envoy Gateway.
 
+<!-- wodby:generated:start -->
+
+## Stack contract
+
+- [Envoy Gateway stack on Wodby](https://wodby.com/stacks/envoy-gateway)
 - [Wodby Kubernetes platform](https://wodby.com)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
@@ -18,31 +23,15 @@ composition for Envoy Gateway.
 
 | Component / service | Default configuration |
 | --- | --- |
-| Envoy Gateway (`envoy-gateway`)<br>`envoy-gateway` | required; enabled by default |
+| Envoy Gateway<br>`envoy-gateway` | required; enabled by default |
 
 System services are enabled or disabled according to the cluster provider and
 infrastructure configuration.
 
-## Role in Wodby infrastructure
-
-Wodby installs this stack as a cluster-owned system app when it is required by
-the Kubernetes provider or selected infrastructure configuration. It is not a
-template for user-deployed applications.
-
-Installation order, enabled services, and settings can vary by cluster type.
-Wodby coordinates its lifecycle with cluster provisioning and infrastructure
-upgrades.
-
-## Platform maintenance
-
-Changes can affect existing clusters. Preserve stack service names and service
-references unless the backend provisioning and upgrade paths are updated at the
-same time.
-
-Wodby platform maintainers can validate the manifests with:
+## Validate the stack manifest
 
 ```bash
 wodby stack validate-manifest stack.yml --org <org-id>
 ```
 
-See the [stack manifest reference](https://wodby.com/docs/2.0/stacks/template/) and the [managed services index](https://github.com/wodby/services).
+<!-- wodby:generated:end -->
