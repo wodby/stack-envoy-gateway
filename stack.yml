@@ -1,6 +1,7 @@
 name: envoy-gateway
 title: Envoy Gateway
 icon: envoy
+docs: https://wodby.com/docs/2.0/stacks/catalog/system/
 services:
 - name: envoy-gateway
   title: Envoy Gateway
